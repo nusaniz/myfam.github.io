@@ -40,6 +40,11 @@
         ul li a {
             text-decoration: none;
         }
+
+        div#accordionExample {
+            max-width: 400px;
+            margin: 0 auto;
+        }
     </style>
 
     <section id="table">
@@ -47,9 +52,210 @@
             <div class="row">
                 <div class="col">
 
-                    <h2 class="text-center mt-5">MyFam</h2>
 
-                    <ul class="text-center mt-4">
+
+                    <h2 class="text-center mt-5">MyFam</h2>
+                    <p class="text-center mt-3">Selamat Datang</p>
+
+
+                    <div class="accordion mt-5" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Tahun 2023
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="text-center">
+                                        <!-- <li><a href="">[1] Jan 2020 - Keuangan A (Ortu)</a></li> -->
+                                        <li><a href="">[1] Jan 2020 - Keuangan B (Nizar)</a></li>
+                                        <!-- <li><a href="">[1] Jan 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[1] Jan 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[2] Feb 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[2] Feb 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[2] Feb 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[2] Feb 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[3] Mar 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[3] Mar 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[3] Mar 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[3] Mar 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[4] Apr 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[4] Apr 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[4] Apr 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[4] Apr 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[5] May 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[5] May 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[5] May 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[5] May 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[6] Jun 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[6] Jun 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[6] Jun 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[6] Jun 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[7] Jul 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[7] Jul 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[7] Jul 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[7] Jul 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[8] Aug 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[8] Aug 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[8] Aug 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[8] Aug 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[9] Sep 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[9] Sep 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[9] Sep 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[9] Sep 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[10] Oct 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[10] Oct 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[10] Oct 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[10] Oct 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[11] Nov 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[11] Nov 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[11] Nov 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[11] Nov 2020 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[12] Dec 2020 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[12] Dec 2020 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[12] Dec 2020 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[12] Dec 2020 - Keuangan D (Adik 2)</a></li> -->
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Tahun 2022
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="text-center">
+                                        <li><a href="">[1] Jan 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[1] Jan 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[1] Jan 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[1] Jan 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[2] Feb 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[2] Feb 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[2] Feb 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[2] Feb 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[3] Mar 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[3] Mar 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[3] Mar 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[3] Mar 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[4] Apr 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[4] Apr 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[4] Apr 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[4] Apr 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[5] May 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[5] May 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[5] May 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[5] May 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[6] Jun 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[6] Jun 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[6] Jun 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[6] Jun 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[7] Jul 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[7] Jul 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[7] Jul 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[7] Jul 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[8] Aug 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[8] Aug 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[8] Aug 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[8] Aug 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[9] Sep 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[9] Sep 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[9] Sep 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[9] Sep 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[10] Oct 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="./lp/[10] Oktober 2022 - Keuangan (Nizar) P.pdf">[10] Oct 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[10] Oct 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[10] Oct 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[11] Nov 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[11] Nov 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[11] Nov 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[11] Nov 2022 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[12] Dec 2022 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[12] Dec 2022 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[12] Dec 2022 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[12] Dec 2022 - Keuangan D (Adik 2)</a></li>
+
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Tahun 2021
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <ul class="text-center">
+                                        <li><a href="">[1] Jan 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[1] Jan 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[1] Jan 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[1] Jan 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[2] Feb 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[2] Feb 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[2] Feb 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[2] Feb 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[3] Mar 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[3] Mar 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[3] Mar 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[3] Mar 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[4] Apr 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[4] Apr 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[4] Apr 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[4] Apr 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[5] May 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[5] May 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[5] May 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[5] May 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[6] Jun 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[6] Jun 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[6] Jun 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[6] Jun 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[7] Jul 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[7] Jul 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[7] Jul 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[7] Jul 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[8] Aug 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[8] Aug 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[8] Aug 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[8] Aug 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[9] Sep 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[9] Sep 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[9] Sep 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[9] Sep 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[10] Oct 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[10] Oct 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[10] Oct 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[10] Oct 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[11] Nov 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[11] Nov 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[11] Nov 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[11] Nov 2021 - Keuangan D (Adik 2)</a></li>
+                                        <li><a href="">[12] Dec 2021 - Keuangan A (Ortu)</a></li>
+                                        <li><a href="">[12] Dec 2021 - Keuangan B (Nizar)</a></li>
+                                        <li><a href="">[12] Dec 2021 - Keuangan C (Adik 1)</a></li>
+                                        <li><a href="">[12] Dec 2021 - Keuangan D (Adik 2)</a></li>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- <ul class="text-center mt-4">
                         <li><a href="">[1] Januari 2023 - Keuangan (Nizar)</a></li><br>
 
                         <li><a href="">[1] Jan 2022 - Keuangan (Orang Tua)</a></li>
@@ -150,7 +356,7 @@
                         <li><a href="">[12] Desember 2020 - Keuangan (Nizar)</a></li>
 
 
-                    </ul>
+                    </ul> -->
                 </div>
             </div>
         </div>
